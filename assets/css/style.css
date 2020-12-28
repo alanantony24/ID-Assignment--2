@@ -46,8 +46,6 @@ body {
 /*   IE10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
 @-ms-viewport { width: device-width; }
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
@@ -103,7 +101,6 @@ section { overflow: hidden; }
 
 /*text color*/
 
-.text-muted{}
 
 .text-primary{color: #fc6a42 !important;;}
 .text-finence{color:#13A0B2 !important;;}
@@ -111,8 +108,6 @@ section { overflow: hidden; }
 .text-white{color:#fff !important;;}
 .text-black{color:#000 !important;}
 
-.text-warning{}
-.text-danger{}
 
 .disabled{
     cursor: not-allowed;
@@ -961,12 +956,9 @@ Home Section style
 /*
 Featured section style
 ========================*/
-.main_features{}
-.features_item{}
 .features_item .f_item_icon{
     float: left;
     width:20%;
-    display: inline-block;
     margin-right: 15px;
 }
 .features_item .f_item_icon i{
@@ -1147,7 +1139,6 @@ Screen01 Section style
     z-index: 4;
 }
 
-.screen01_content{}
 .screen03_content p,
 .screen02_content p,
 .screen01_content p{
@@ -1183,7 +1174,14 @@ Screen01 Section style
 .screen01_content ul li:nth-child(3){
     z-index: 0
 }
-
+.weatherform{
+    max-width: 500px;
+    margin-left: 50px;
+}
+.weatherform button{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
 /*
 People Section style
 =====================*/
@@ -1191,7 +1189,6 @@ People Section style
 .main_reviews .head_title{
     padding-bottom:1rem;
 }
-.reviews_content{}
 .reviews_item{
     position: relative;
     width:100%;
