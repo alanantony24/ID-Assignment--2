@@ -1174,18 +1174,13 @@ Screen01 Section style
 .screen01_content ul li:nth-child(3){
     z-index: 0
 }
-.weatherform{
+/*Working area for the GoweatherApp*/
+.locationinputform{
     max-width: 500px;
-    margin-left: 50px;
+    margin-left: 70px;
 }
-.weatherform button{
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.workingarea{
-    position: relative;
-    left: 700px;
-    bottom: 350px;
+.locationinputform div{
+    padding-bottom: 20px;
 }
 /*
 People Section style

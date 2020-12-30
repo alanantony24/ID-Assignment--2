@@ -216,47 +216,46 @@
 
 
             <!--screen short section-->
-            <section id="weatherapp" class="weatherapp">
+            
+            <section id="goweatherapp">
+                <div class="heading1 text-center head_title">
+                    <h2>Start GoWeatherApp</h2>
+                    <h5>This is where the app works!</h5>
+                </div> 
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-md-offset-2 col-sm-12">
-                            <div class="head_title text-center">
-                                <h2>Start GoWeather</h2>
-                                <h5>This is where the magic happens!</h5>
+                        <div class="col-sm-6 text-left head_title">
+                            <h2>Enter your info here!</h2>
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Enter your Name</label>
+                                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group locationinput">
+                                  <label for="exampleInputPassword1">Enter your current location</label>
+                                  <input type="text" class="form-control" id="exampleInputlocation placeholder="Enter the city name">
+                                </div>
+                                <button type="button" class="btn btn-primary" id="resultbtn">Get Result</button>
+                              </form>
+                        </div>
+                        <div class="col-sm-6 text-right head_title">
+                            <h2>Weather Results!</h2>
+                            <div class="temperature">
+                                <h4 id="temp" class="display">The temperature is --&deg;C</h4>
+                            </div>
+                            <div class="desc">
+                                <h4 id="weatherdesc">--</h4>
+                            </div>
+                            <div class="country">
+                                <h4 id="countryname">..</h4>
+                            </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="weatherform">
-                    <form>
-                        <div class="mb-3s">
-                          <label for="exampleInputEmail1" class="form-label">Enter your Name</label>
-                          <input type="text" class="form-control" id="validationDefault01" required>
-                        </div>
-                        <div class="mb-3 locationinput">
-                          <label for="exampleInputPassword1" class="form-label">Enter or get current location</label>
-                          <input type="text" class="form-control" id="locationvalue" placeholder="Enter location" value="">
-                          <button type="button" class="btn btn-primary" id="locbutton">Get Location</button>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
-                </div>
-                <div class="workingarea float-right">
-                    <div class="container">
-                        <h1 class="head_title float end app-title display">Weather Display</h1>
-                        <div class="notifs"></div>
-                        <div class="weatherarea">
-                            <div class="weather-icon"><img src="" alt=""></div>
-                            <div class="temperature"><h1 id="temps">&deg;C</h1></div>
-                            <div class="description"><h4 id="weatherdesc">The weather is chilly</h4></div>
-                            <div class="additional-information"><h4>Perfect for skiing</h4></div>
-                        </div>
-                    </div>
-                </div>
+                </div>s
             </section>
-
             
+
             <!--People Section-->
             <section id="reviews" class="reviews m-top-100">
                 <div class="container">
