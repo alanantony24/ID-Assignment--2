@@ -1182,6 +1182,11 @@ Screen01 Section style
     margin-bottom: 30px;
     margin-top: 20px;
 }
+.workingarea{
+    position: relative;
+    left: 700px;
+    bottom: 350px;
+}
 /*
 People Section style
 =====================*/
@@ -1216,9 +1221,6 @@ People Section style
     bottom: -45px;
     transform: rotate(-180deg);
 }
-
-
-
 /*
 Download Section style
 =====================*/

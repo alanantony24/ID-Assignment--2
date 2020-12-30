@@ -230,19 +230,32 @@
 
                 <div class="weatherform">
                     <form>
-                        <div class="mb-3">
+                        <div class="mb-3s">
                           <label for="exampleInputEmail1" class="form-label">Enter your Name</label>
                           <input type="text" class="form-control" id="validationDefault01" required>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 locationinput">
                           <label for="exampleInputPassword1" class="form-label">Enter or get current location</label>
-                          <input type="text" class="form-control" id="validationDefault02">
-                          <button type="button" class="btn btn-primary">Get Location</button>
+                          <input type="text" class="form-control" id="locationvalue" placeholder="Enter location" value="">
+                          <button type="button" class="btn btn-primary" id="locbutton">Get Location</button>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                       </form>
                 </div>
+                <div class="workingarea float-right">
+                    <div class="container">
+                        <h1 class="head_title float end app-title display">Weather Display</h1>
+                        <div class="notifs"></div>
+                        <div class="weatherarea">
+                            <div class="weather-icon"><img src="" alt=""></div>
+                            <div class="temperature"><h1 id="temps">&deg;C</h1></div>
+                            <div class="description"><h4 id="weatherdesc">The weather is chilly</h4></div>
+                            <div class="additional-information"><h4>Perfect for skiing</h4></div>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             
             <!--People Section-->
             <section id="reviews" class="reviews m-top-100">
