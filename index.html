@@ -87,6 +87,7 @@
                         <ul class="nav navbar-nav navbar-center">
                             <li><a href="#home">Home</a></li>                    
                             <li><a href="#features">Key-Features</a></li>
+                            <li><a href="#goweatherappstart">GoWeatherApp</a></li>
                             <li><a href="#reviews">Reviews</a></li>
                             <li><a href="#download">Download</a></li>
                         </ul>
@@ -217,44 +218,49 @@
 
             <!--screen short section-->
             
-            <section id="goweatherapp">
-                <div class="heading1 text-center head_title">
+            <section class="weatherwidget" id="goweatherappstart">
+                <div class="text-center head_title">
                     <h2>Start GoWeatherApp</h2>
-                    <h5>This is where the app works!</h5>
-                </div> 
-                <div class="container">
+                    <h5>This is where the user gets the suggestions ;)</h5>
+                </div>
+                <div class="container text-center">
                     <div class="row">
                         <div class="col-sm-6 text-left head_title">
-                            <h2>Enter your info here!</h2>
-                            <form>
-                                <div class="form-group">
-                                  <label for="exampleInputEmail1">Enter your Name</label>
-                                  <input type="text" class="form-control" id="exampleInputName" placeholder="Enter Name">
-                                </div>
-                                <div class="form-group locationinput">
-                                  <label for="exampleInputPassword1">Enter your current location</label>
-                                  <input type="text" class="form-control" id="exampleInputlocation placeholder="Enter the city name">
-                                </div>
-                                <button type="button" class="btn btn-primary" id="resultbtn">Get Result</button>
-                              </form>
+                            <h2>WeatherForm</h2>
+                            <div id="weatherform">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputName" class="form-label">Enter Name</label>
+                                      <input type="text" class="form-control" id="exampleInputName" required>
+                                    </div>
+                                    <div class="mb-3 locationinput">
+                                      <label for="exampleInputLocation" class="form-label">Enter current location</label>
+                                      <input type="text" class="form-control" id="exampleInputLocation" required>
+                                    </div>
+                                    <br>
+                                    <button id="resultbtn" type="button" class="btn btn-primary">Get Results</button>
+                                  </form>
+                            </div>
                         </div>
-                        <div class="col-sm-6 text-right head_title">
-                            <h2>Weather Results!</h2>
-                            <div class="temperature">
-                                <h4 id="temp" class="display">The temperature is --&deg;C</h4>
-                            </div>
-                            <div class="desc">
-                                <h4 id="weatherdesc">--</h4>
-                            </div>
-                            <div class="country">
-                                <h4 id="countryname">..</h4>
-                            </div>
+                        <div class="col-sm-6 text-right weatherappclass text-center head_title">
+                            <h2>WeatherWidget</h2>
+                            <br>
+                            <div id="weatherapp">
+                                <img src="icons/unknown.png" alt="icons" id="img">
+                                <h3 class="text-center" id="temp"></h3>
+                                <h3 class="text-center" id="country"></h3>
+                                <h3 class="text-center" id="desc"></h3>
+                                <h3 class="text-center" id="activities"></h3>
                             </div>
                         </div>
                     </div>
-                </div>s
+                    <div class="container">
+                        <div class="text-center head_title">
+                            <h2>The reccomended activity : Running</h2>
+                            <img src="icons/tstorms.png" alt="">
+                        </div>
+                    </div>
             </section>
-            
 
             <!--People Section-->
             <section id="reviews" class="reviews m-top-100">
@@ -263,8 +269,8 @@
                         <div class="main_reviews">
                             <div class="col-md-8 col-md-offset-2 col-sm-12">
                                 <div class="head_title text-center">
-                                    <h2>What reviews are saying</h2>
-                                    <h5>Reviews</h5>
+                                    <h2>Reviews</h2>
+                                    <h5>What reviews are saying</h5>
                                 </div>
                             </div>
 
@@ -272,8 +278,8 @@
                                 <div class="col-md-6">
                                     <div class="reviews_item m-top-40">
                                         <div class="reviews_item_icon pull-left">“</div>
-                                        <h3>What art offers is space - a certain breathing room for the spirit. </h3>
-                                        <h5>John Updike</h5>
+                                        <h3>The app works great, it helps me do my day to day tasks. </h3>
+                                        <h5>John Wood</h5>
                                         <div class="reviews_item_icon1 pull-right text-right">“</div>
                                     </div>
                                 </div><!-- End off col-md-6 -->
@@ -281,26 +287,30 @@
                                 <div class="col-md-6">
                                     <div class="reviews_item m-top-40">
                                         <div class="reviews_item_icon pull-left">“</div>
-                                        <h3>We do not see nature with our eyes,
-                                            but with our understandings and our hearts.</h3>
-                                        <h5>William Hazlitt</h5>
+                                        <h3>The app is an abosulte lifesaver! I highly reccomend,
+                                            the GoWeatherApp.
+                                        </h3>
+                                        <h5>Joe Moga</h5>
                                         <div class="reviews_item_icon1 pull-right text-right">“</div>
                                     </div>
                                 </div><!-- End off col-md-6 -->
                                 <div class="col-md-6">
                                     <div class="reviews_item m-top-40">
                                         <div class="reviews_item_icon pull-left">“</div>
-                                        <h3>The only courage that matters is the kind 
-                                            that gets you from one moment to the next.</h3>
-                                        <h5>Mignon McLaughlin</h5>
+                                        <h3>Been using this app for over a year, 
+                                            absoultely worth it.
+                                        </h3>
+                                        <h5>Marie.H</h5>
                                         <div class="reviews_item_icon1 pull-right text-right">“</div>
                                     </div>
                                 </div><!-- End off col-md-6 -->
                                 <div class="col-md-6">
                                     <div class="reviews_item m-top-40">
                                         <div class="reviews_item_icon pull-left">“</div>
-                                        <h3>No man has a good enough memory to be a successful liar. </h3>
-                                        <h5>Abraham Lincoln</h5>
+                                        <h3>The app contains weather information of most places,
+                                            really good for travellers like me.
+                                        </h3>
+                                        <h5>Ellie James</h5>
                                         <div class="reviews_item_icon1 pull-right text-right">“</div>
                                     </div>
                                 </div><!-- End off col-md-6 -->
@@ -379,6 +389,7 @@
                                         <ul class="nav navbar-nav navbar-center">
                                             <li><a href="#home">Home</a></li>                    
                                             <li><a href="#features">Features</a></li>
+                                            <li><a href="#goweatherappstart">GoWeatherApp</a></li>
                                             <li><a href="#reviews">Reviews</a></li>
                                             <li><a href="#download">Download</a></li>
                                         </ul>
@@ -390,11 +401,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Made with 
-                                    <i class="fa fa-heart"></i>
-                                    by 
-                                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> 
-                                    2016. All Rights Reserved
+                                    Made with Bootstrap Template by GrayGrids!! :)
                                 </p>
                             </div>
                         </div>
