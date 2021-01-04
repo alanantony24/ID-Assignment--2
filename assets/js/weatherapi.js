@@ -74,7 +74,7 @@ document.getElementById("resultbtn").addEventListener("click", e=> {
                     return 'Recommended activities: Rainy Day Walk, Reading, Cooking'
                 }
                 else{
-                    return 'Recommended activities: Listening to music, Walk, Movies'
+                    return 'Recommended activities: Listening to music, Walk, Movies, Stay at home'
                 }
             }
         })
