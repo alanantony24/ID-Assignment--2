@@ -969,7 +969,10 @@ Featured section style
     display: inline-block;
     width:70%;
 }
-
+.f_item_icon svg{
+    width: 50px;
+    height: 100px;
+}
 
 /*
 Testimonial Section style
