@@ -74,86 +74,89 @@ document.getElementById("resultbtn").addEventListener("click", e=> {
             document.getElementById("maxtemp").innerHTML = main.temp_max + "&deg;C"
             document.getElementById("img").src = getIcon();
             function getIcon(){
-                if(weather[0].description == 'heavy intensity rain' || weather[0].description == 'moderate rain'){
-                    document.getElementById("weatherapp").style.background = ' #8aa7ec';
-                    document.getElementById("topwear").innerHTML = clothesinfo[1].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[1].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[1].Footwear;
-                    document.getElementById("accessories").innerHTML = clothesinfo[1].Accessories;
-                    return 'icons/tstorms.png'
-                }
-                else if(weather[0].description == 'mist' || weather[0].description == 'fog' || weather[0].description == 'haze'){
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    document.getElementById("weatherapp").style.background = 'orange';
-                    return 'icons/fog.png'
-                }
-                else if(weather[0].description == 'few clouds' || weather[0].description == 'scattered clouds' || weather[0].description == 'broken clouds'){
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[3].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[3].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[3].Footwear;
-                    document.getElementById("accessories").innerHTML = clothesinfo[3].Accessories;
-                    return 'icons/mostlycloudy.png'
-                }
-                else if(weather[0].description == 'clear sky'){
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    return 'icons/clear.png'
-                }
-                else if(weather[0].description == 'heavy shower snow' || weather[0].description == 'snow' || weather[0].description == 'light snow'){
-                    document.getElementById("weatherapp").style.background = ' #8aa7ec';
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    return 'icons/snow.png'
-                }
-                else if(weather[0].description == 'overcast clouds'){
-                    document.getElementById("weatherapp").style.background = 'orange';
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    return 'icons/cloudy.png'
-                }
-                else if(weather[0].description == 'light rain'){
-                    document.getElementById("weatherapp").style.background = ' #8aa7ec';
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    return 'icons/chancerain.png'
-                }
-                else if(weather[0].description == 'drizzle' || weather[0].description == 'light intensity drizzle' || weather[0].description == 'light intensity shower rain' || weather[0].description == 'shower rain'){
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    document.getElementById("weatherapp").style.background = '#8aa7ec';
-                    return 'icons/chancerain.png'
-                }
-                else{
-                    document.getElementById("weatherapp").style.background = 'green';
-                    document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
-                    document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
-                    document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
-                    document.getElementById("accessories").innerHTML  = clothesinfo[0].Accessories;
-                    document.getElementById("weatherapp").style.background = 'grey'
-                    return 'icons/unknown.png'
-                }
+              if(weather[0].description == 'heavy intensity rain' || weather[0].description == 'moderate rain' || weather[0].description == 'thunderstorm'){
+                document.getElementById("weatherapp").style.background = ' #8aa7ec';
+                return 'icons/tstorms.png'
             }
-            
+            else if(weather[0].description == 'mist' || weather[0].description == 'fog' || weather[0].description == 'haze'){
+                document.getElementById("weatherapp").style.background = 'orange';
+                return 'icons/fog.png'
+            }
+            else if(weather[0].description == 'few clouds' || weather[0].description == 'scattered clouds' || weather[0].description == 'broken clouds'){
+                document.getElementById("weatherapp").style.background = 'green';
+                return 'icons/mostlycloudy.png'
+            }
+            else if(weather[0].description == 'clear sky'){
+                document.getElementById("weatherapp").style.background = 'green';
+                return 'icons/clear.png'
+            }
+            else if(weather[0].description == 'snow' || weather[0].description == 'light snow'){
+                document.getElementById("weatherapp").style.background = ' #8aa7ec';
+                return 'icons/snow.png'
+            }
+            else if(weather[0].description == 'heavy shower snow'){
+                document.getElementById("weatherapp").style.background = '#8aa7ec';
+                return 'icons/snow.png'
+            }
+            else if(weather[0].description == 'overcast clouds'){
+                document.getElementById("weatherapp").style.background = 'orange';
+                return 'icons/cloudy.png'
+            }
+            else if(weather[0].description == 'light rain'){
+                document.getElementById("weatherapp").style.background = ' #8aa7ec';
+                return 'icons/chancerain.png'
+            }
+            else if(weather[0].description == 'drizzle' || weather[1].description == 'light intensity drizzle' || weather[0].description == 'light intensity shower rain' || weather[0].description == 'shower rain'){
+                document.getElementById("weatherapp").style.background = 'green';
+                return 'icons/chancerain.png'
+            }
+            else{
+                document.getElementById("weatherapp").style.background = 'grey'
+                return 'icons/unknown.png'
+            }
+            }
+            function GetClothes(){
+              if(main.temp >= 25){
+                document.getElementById("topwear").innerHTML = clothesinfo[0].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[0].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[0].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[0].Accessories;
+              }
+              else if(main.temp <= 15 && main.temp >= 5){
+                document.getElementById("topwear").innerHTML = clothesinfo[4].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[4].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[4].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[4].Accessories;
+              }
+              else if(main.temp < 5){
+                document.getElementById("topwear").innerHTML = clothesinfo[5].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[5].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[5].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[5].Accessories;
+              }
+            }
+            function ifRain(){
+              if(weather[0].description == 'moderate rain' || wewather[0].description == 'thunderstorm' || weather[0].description == 'heavy intensity rain'){
+                document.getElementById("topwear").innerHTML = clothesinfo[2].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[2].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[2].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[2].Accessories;
+              }
+              else if(weather[0].description == 'drizzle' || weather[1].description == 'light intensity drizzle' || weather[0].description == 'light intensity shower rain' || weather[0].description == 'shower rain'){
+                document.getElementById("topwear").innerHTML = clothesinfo[1].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[1].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[1].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[1].Accessories;
+              }
+              else if(weather[0].description == 'light rain'){
+                document.getElementById("topwear").innerHTML = clothesinfo[1].Top;
+                document.getElementById("bottomwear").innerHTML = clothesinfo[1].Bottom;
+                document.getElementById("footwear").innerHTML = clothesinfo[1].Footwear;
+                document.getElementById("accessories").innerHTML = clothesinfo[1].Accessories;
+              }
+            }
+            GetClothes();
+            ifRain();
         })
-})
+      })
 
