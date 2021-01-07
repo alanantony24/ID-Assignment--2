@@ -93,11 +93,11 @@ document.getElementById("resultbtn").addEventListener("click", e=> {
                 return 'icons/clear.png'
             }
             else if(weather[0].description == 'snow' || weather[0].description == 'light snow'){
-                document.getElementById("weatherapp").style.background = ' #8aa7ec';
+                document.getElementById("weatherapp").style.background = '#D4418E';
                 return 'icons/snow.png'
             }
             else if(weather[0].description == 'heavy shower snow'){
-                document.getElementById("weatherapp").style.background = '#8aa7ec';
+                document.getElementById("weatherapp").style.background = '#D4418E';
                 return 'icons/snow.png'
             }
             else if(weather[0].description == 'overcast clouds'){
