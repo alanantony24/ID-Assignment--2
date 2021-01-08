@@ -44,14 +44,25 @@ generated inside my JavaScript file
 * Overall, The website functions really well as I want it to. 
 * However the Website keeps showing some JavaScript errors even after I removed the files from the template. 
 * And since they don't affect the functioning of the App I am going to ignore those errors
+### Minor Issues
+* Sometimes the API calls display the weather differently than it really is.
+* The icons may not get displayed. In this case the website can be reloaded and it will work fine.
 ## Sources And Links for the resources used
-* Graphics and icons were from numerous sources such as FlatIcon, FreePik and DevianArt and GrayGrids. I didn't do any special artwork for this project and all the images are from their respective sources
+* Graphics and icons were from numerous sources such as FlatIcon, FreePik and DeviantArt and GrayGrids. I didn't do any special artwork for this project and all the images are from their respective sources
 * The API used is the popular weather API OpenWeatherMap. It's free policy allows enough calls to test the app.
 * The BootStrap Template is from GrayGrids. The credit for some of the code in this project goes to GrayGrids.
 ## Links
 ### Resources used
+* BootStrap Template - https://graygrids.com/templates/weather-apps-landing-page-free-bootstrap-template/
+* Icons - https://www.flaticon.com/, https://www.freepik.com/, https://www.deviantart.com/
+* OpenWeather API - https://openweathermap.org/api
+* RestDB.io (JSON Data Link) - https://goweatherapp-1220.restdb.io/rest/clothing
+### Acknowloedgements
+I was also inspired by many youtube videos which helped me solve small errors
+* DevEd, Code Explained, The Coding Train are some mentionable Youtube Channels.
+* Pinterest Designs
 ### GitHub Page
-https://alanantony24.github.io/ID-Assignment-2/
+* https://alanantony24.github.io/ID-Assignment-2/
 
 
 
