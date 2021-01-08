@@ -12,11 +12,11 @@ GoWeatherApp is a web application that allows users to check the current weather
 * The user can search up any city in the world and the app displays the current weather of that place and suggests clothing to wear.
 * The website provides useful for people who want to plan ahead but and do not want their plans jeapordized by weather conditions.
 * The current features are:
- * Display weather of input city.
- * Suggest clothes for based on weather and temperature.
+    * Display weather of input city.
+    * Suggest clothes for based on weather and temperature.
 * Potential Features:
- * A key to get the current location.
- * Display points of interest according to weather orr suggest activities to do.
+    * A key to get the current location.
+    * Display points of interest according to weather orr suggest activities to do.
 ### User Case
 * The user wants to visit Sentosa with his / her family for a whole day. They plan 2 days ahead about what they'll do at Sentosa
 * On the day of the trip heavy rain and thunderstorm is happening and they had to return home.
