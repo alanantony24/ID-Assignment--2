@@ -65,6 +65,7 @@ I was also inspired by many youtube videos and Pinterest which helped me solve s
 * DevEd, Code Explained, The Coding Train are some mentionable Youtube Channels.
 * Pinterest Designs
 * All across the source code files there are snippets/code sections from the BootStrap template itself, especially in the CSS. The credit belongs to the respective author of the template.
+* The demo video and Adobe XD wireframe can be found in the NETWORK FOLDER.
 ### GitHub Page
 * https://alanantony24.github.io/ID-Assignment-2/
 
