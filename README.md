@@ -66,6 +66,7 @@ I was also inspired by many youtube videos and Pinterest which helped me solve s
 * Pinterest Designs
 * All across the source code files there are snippets/code sections from the BootStrap template itself, especially in the CSS. The credit belongs to the respective author of the template.
 * The demo video and Adobe XD wireframe can be found in the NETWORK FOLDER.
+* The vaidators show a significant amount of warnings and 2-3 errors overall in the whole source code. But it does not affect the way the website functions.
 ### GitHub Page
 * https://alanantony24.github.io/ID-Assignment-2/
 
